@@ -2,6 +2,10 @@
 bin/
 out/
 .vs
+
+# MSVC CMakeSettings
+CMakeSettings.json
+
 # Prerequisites
 *.d
 
