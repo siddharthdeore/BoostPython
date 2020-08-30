@@ -103,7 +103,7 @@ if(Boost_FOUND)
 	
 	# Add a shared module - modules are intended to be imported at runtime.
 	add_library(pyBoostPython MODULE
-	"src/pyBoostPython.cpp"
+	"src/BoostPython.cpp"
 	"include/NumPyArrayData.h"
 
 	)
@@ -120,8 +120,6 @@ if(Boost_FOUND)
 		# This includes the Boost Python library Even though Boost Python library is included statically, in Windows it has a dependency to the Python library.	
 		target_link_libraries(pyBoostPython ${PYTHON_LIBRARIES})
 		# target_compile_definitions(BoostPython_ext PRIVATE BOOST_AUTO_LINK_SYSTEM)
-
-
 	endif()
 
 
